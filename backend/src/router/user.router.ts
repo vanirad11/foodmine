@@ -21,10 +21,11 @@ router.get("/seed", asyncHandler(
      res.send("Seed Is Done!");
     }
   ))
-  
+
 router.get("/", asyncHandler(async(req, res) => {
-  const users=await UserModel.find()
-  res.send(users);
+  res.json({
+    message: "User route works"
+  });
 }))
 
 router.post("/login", asyncHandler(async(req, res) => {
