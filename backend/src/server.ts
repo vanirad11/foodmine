@@ -16,6 +16,12 @@ app.use(cors({
     origin:["http://localhost:4200"]
 }));
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "FoodMine API is running"
+  });
+});
+
 app.use("/api/foods", foodRouter);
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
