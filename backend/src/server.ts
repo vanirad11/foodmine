@@ -13,7 +13,8 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     credentials:true,
-    origin:["http://localhost:4200"]
+    "http://localhost:4200",
+    origin:["https://foodmine-o11b.vercel.app/"]
 }));
 
 app.use("/api/foods", foodRouter);
