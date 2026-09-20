@@ -1,4 +1,4 @@
-const BASE_URL = 'https://foodmine-z12o-o09gtt0dp-vani-rs-projects.vercel.app';
+const BASE_URL = 'https://foodmine-bd.vercel.app';
 
 export const FOODS_URL = BASE_URL + '/api/foods';
 export const FOODS_TAGS_URL = FOODS_URL + '/tags';
